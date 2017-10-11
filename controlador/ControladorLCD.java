@@ -11,7 +11,7 @@ import java.util.Iterator;
 public class ControladorLCD {
 	
 	
-	static int validaSize(String size) {
+	public static int validaSize(String size) {
 		int  tam;
 		if(isNumeric(size)){
             tam = Integer.parseInt(size);
@@ -65,7 +65,7 @@ public class ControladorLCD {
     *
     * @param cadena Cadena
     */  
-   static boolean isNumeric(String cadena) {
+   public static boolean isNumeric(String cadena) {
        try {
            Integer.parseInt(cadena);
            return true;
@@ -116,7 +116,7 @@ public class ControladorLCD {
    * @param parametros
    * @param comando
    */
- static void validarCantidadDeParametros(String[] parametros,String comando){
+ public static void validarCantidadDeParametros(String[] parametros,String comando){
 	 
 	//Valida la cantidad de parametros
      if(parametros.length>2){
